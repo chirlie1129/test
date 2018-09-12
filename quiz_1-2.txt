@@ -1,0 +1,28 @@
+Quiz 1-2
+1.ANS:
+需要同時考慮到False Negative與False Positive, 會使用f1 score做為評估的依據
+當False端的data數量很大時, 使用F1 score也是較好的
+
+2.ANS:
+微分後只有在零的那點為無限大, 其他位置皆為零 無法使用gradient descent
+
+3.ANS:
+bias:使用training data訓練模型,其預測結果與實際結果的比較
+Variance: 模型對於testing data的預測表現
+理想狀態為low bias & low varience
+
+4.ANS
+在產生分枝時採隨機選取feature, 所以不同樹之間的相關性較低
+也因此比較不會發生overfitting的問題, 所以不需prune
+
+5.ANS:
+將不同的資料encode成vector, 使電腦可以辨認
+EX:{male,female} => [1,0] for male, [0,1] for female
+
+6.ANS
+-Regularization
+-增加training data,
+-移除部分feature
+-dropout
+-early stop
+-cross validation
